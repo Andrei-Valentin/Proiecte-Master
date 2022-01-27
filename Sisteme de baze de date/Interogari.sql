@@ -1,9 +1,9 @@
--- Folosite: GROUP BY, HAVING, START WITH, CONNECT BY, ORDER BY
+-- Folosite: , HAVING, START WITH, CONNECT BY
 -- LOWER, UPPER,SUBSTR, INSTR, TO_CHAR, TO_DATE, ADD_MONTHS, MONTHS_BETWEEN
--- DECODE, NVL, NULLIF, CASE
+-- DECODE, NULLIF, CASE
 -- INNER, LEFT, RIGHT, FULL JOIN;
--- AVG, SUM, MIN, MAX, COUNT
--- subinterogări în clauzele: SELECT, FROM, WHERE, HAVING;
+--  MIN, MAX
+-- subinterogări în clauzele:  WHERE, HAVING;
 -- operatorul DIVISION.
 
 
@@ -51,3 +51,18 @@ JOIN (SELECT rt.id_pacient, crt.id_reteta, SUM(crt.cantitate) Cantitate FROM con
 ON (pc.id_pacient=cm.id_pacient)
 GROUP BY pc.nume, pc.prenume, cm.Cantitate
 ORDER BY cm.Cantitate DESC;
+
+
+
+--Pacientii care au avut cel putin doua retete, ordonati descrescator
+SELECT pc.nume, nrt."Numar" "Numar Retete"
+FROM pacienti pc
+JOIN(SELECT id_pacient, COUNT(id_reteta) "Numar"
+    FROM retete
+    GROUP BY id_pacient
+    ORDER BY "Numar"
+    ) nrt
+ON (pc.id_pacient = nrt.id_pacient)
+HAVING nrt."Numar" > 1
+GROUP BY pc.nume, nrt."Numar"
+ORDER BY "Numar Retete" DESC
