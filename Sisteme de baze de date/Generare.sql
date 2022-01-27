@@ -17,11 +17,13 @@ CREATE TABLE Spital (
 
 CREATE TABLE Pacienti (
   id_pacient number(10) CONSTRAINT id_pacient_PK PRIMARY KEY,
+  id_spital number(10),
   nume varchar2(50 CHAR) CONSTRAINT nume_pacient_not_null NOT NULL,
   prenume varchar2(50 CHAR) CONSTRAINT prenume_pacient_not_null NOT NULL,
   data_nasterii date CONSTRAINT data_nasterii_not_null NOT NULL,
   telefon varchar2(15 CHAR),
-  asigurat number(1) CONSTRAINT asigurat_not_null NOT NULL
+  asigurat number(1) CONSTRAINT asigurat_not_null NOT NULL,
+  CONSTRAINT id_spital_pacienti_FK FOREIGN KEY (id_spital) REFERENCES Spital(id_spital)
 );
 
 
