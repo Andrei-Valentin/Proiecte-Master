@@ -82,3 +82,22 @@ VALUES (6,'Str. Clinicilor 3-5', 'Cluj-Napoca', 'Cluj', 'Romania');
 
 INSERT INTO Adresa(id_adresa, nume_strada, oras, judet, tara)
 VALUES (7,'Strümpellstraße 41', 'Leipzig', '', 'Germania');
+
+
+INSERT INTO Spital(id_spital, id_adresa, nume)
+VALUES (1, 1, 'Spitalul Clinic de Urgenta Bucuresti');
+
+INSERT INTO Spital(id_spital, id_adresa, nume)
+VALUES (2, 4, 'Institutul Clinic Fundeni');
+
+INSERT INTO Spital(id_spital, id_adresa, nume)
+VALUES (3, 2, 'Spitalul Clinic de Copii Marie Skłodowska Curie');
+
+INSERT INTO Spital(id_spital, id_adresa, nume)
+VALUES (4, 3, 'Spitalul Clinic de Boli Infecțioase');
+
+INSERT INTO Spital(id_spital, id_adresa, nume)
+VALUES (5, 7, 'Helios Park-Klinikum Leipzig');
+
+INSERT INTO Spital(id_spital, id_adresa, nume)
+VALUES (6, 6, 'Spitalul Clinic Județean de Urgență Cluj');
