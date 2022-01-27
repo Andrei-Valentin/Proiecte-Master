@@ -10,3 +10,9 @@ ORDER BY ad.tara DESC, ad.oras ASC;
 SELECT nume "Nume", prenume "Prenume", data_angajare "Data Angajare"
 FROM personal
 WHERE personal.data_angajare LIKE ('12%');
+
+--Afisarea pacientilor in mod descrescator in functie de numarul de retete pe care l-au avut
+SELECT pc.nume "Nume Pacient", rt.id_pacient "Id pacient", COUNT(rt.id_pacient) AS "Numar retete"
+FROM retete rt JOIN pacienti pc ON (pc.id_pacient=rt.id_pacient)
+GROUP BY pc.nume, rt.id_pacient
+ORDER BY "Numar retete" DESC;
