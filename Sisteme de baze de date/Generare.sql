@@ -180,3 +180,9 @@ VALUES (4, 3, to_date('04-12-2019','dd-mm-yyyy'), 'Acnee');
 INSERT INTO Retete(id_reteta, id_pacient, data_emitere, diagnostic)
 VALUES (5, 4, to_date('07-10-2021','dd-mm-yyyy'), 'Afectiune sistem nervos');
 
+INSERT INTO Retete(id_reteta, id_pacient, data_emitere, diagnostic)
+VALUES (6, 4, to_date('07-12-2020','dd-mm-yyyy'), 'Afectiune hepatobiliara');
+
+INSERT INTO Retete(id_reteta, id_pacient, data_emitere, diagnostic)
+VALUES (7, 2, to_date('05-07-2021','dd-mm-yyyy'), 'Afectiune cardiovasculara');
+
