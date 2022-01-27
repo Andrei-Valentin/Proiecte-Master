@@ -1,4 +1,3 @@
---Trigger de tip LMD la nivel de comanda, Nu ne permite sa modificam salariul personalului in primele 3 luni ale anului
 
 CREATE OR REPLACE TRIGGER salariu_inceput_de_an
     BEFORE UPDATE OF salariu  
