@@ -55,8 +55,22 @@ JOIN(SELECT id_pacient, COUNT(id_reteta) "Numar"
 ON (pc.id_pacient = nrt.id_pacient)
 HAVING nrt."Numar" > 1
 GROUP BY pc.nume, nrt."Numar"
-ORDER BY "Numar Retete" DESC
+ORDER BY "Numar Retete" DESC;
 
+
+--Afisarea in ordine crescatoare a persoanelor cu salarii intre 4000 si 10000, impreuna cu id-ul spitalului
+SELECT nume, id_spital, salariu
+FROM Personal
+WHERE salariu BETWEEN 4000 AND 10000
+ORDER BY salariu ASC;
+
+
+
+--Numele, salariul si anul angajarii persoanelor angajate dupa 2000
+SELECT nume, prenume, salariu, TO_CHAR(data_angajare, 'YYYY') "Anul angajarii"
+FROM personal
+WHERE TO_CHAR(data_angajare, 'YYYY')>2000
+ORDER BY "Anul angajarii" ASC;
 
 
 
