@@ -135,3 +135,31 @@ VALUES (4, 2, 'ASISTENT MEDICAL', 'Serban', 'Carmen', to_date('01-12-2021','dd-m
 
 INSERT INTO Personal(id_angajat, id_spital, functie, nume, prenume, data_angajare, salariu, telefon)
 VALUES (5, 5, 'MEDIC PRIMAR', 'Jürgen', 'Kiwit', to_date('03-12-1980','dd-mm-yyyy'), 25000, to_char('2407194653'));
+
+
+
+
+INSERT INTO Medicamente(id_medicament, denumire_medicament, pret)
+VALUES (1, 'Anghirol', 40);
+
+INSERT INTO Medicamente(id_medicament, denumire_medicament, pret)
+VALUES (2, 'Colebil', 63);
+
+INSERT INTO Medicamente(id_medicament, denumire_medicament, pret)
+VALUES (3, 'Alle gel', 35);
+
+INSERT INTO Medicamente(id_medicament, denumire_medicament, pret)
+VALUES (4, 'Aspenter', 45);
+
+INSERT INTO Medicamente(id_medicament, denumire_medicament, pret)
+VALUES (5, 'Aciclovir crema', 15);
+
+INSERT INTO Medicamente(id_medicament, denumire_medicament, pret)
+VALUES (6, 'Amoxicilina', 99);
+
+INSERT INTO Medicamente(id_medicament, denumire_medicament, pret)
+VALUES (7, 'Adjuvin', 79);
+
+INSERT INTO Medicamente(id_medicament, denumire_medicament, pret)
+VALUES (8, 'Baneocin', 39);
+
