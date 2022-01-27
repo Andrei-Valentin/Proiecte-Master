@@ -22,7 +22,7 @@ ORDER BY "Numar retete" DESC;
 
 
 
---Spitalele cu cea mai mare medie a salariilor, oronate descrescator
+--Spitalele cu cea mai mare medie a salariilor, ordonate descrescator
 --Media salariilor este afisata cu 2 zecimale
 SELECT spital.nume "Nume Spital", ROUND(AVG(personal.salariu),2) AS "Salariu Mediu"
 FROM personal
