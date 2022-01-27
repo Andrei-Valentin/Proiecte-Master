@@ -62,6 +62,7 @@ CREATE TABLE ContinutRetete(
 );
 
 
+
 INSERT INTO Adresa(id_adresa, nume_strada, oras, judet, tara)
 VALUES (1,'Calea Floreasca 8', 'Bucuresti', 'Bucuresti', 'Romania');
 
@@ -82,6 +83,7 @@ VALUES (6,'Str. Clinicilor 3-5', 'Cluj-Napoca', 'Cluj', 'Romania');
 
 INSERT INTO Adresa(id_adresa, nume_strada, oras, judet, tara)
 VALUES (7,'Strümpellstraße 41', 'Leipzig', '', 'Germania');
+
 
 
 INSERT INTO Spital(id_spital, id_adresa, nume)
@@ -138,7 +140,6 @@ VALUES (5, 5, 'MEDIC PRIMAR', 'Jürgen', 'Kiwit', to_date('03-12-1980','dd-mm-yy
 
 
 
-
 INSERT INTO Medicamente(id_medicament, denumire_medicament, pret)
 VALUES (1, 'Anghirol', 40);
 
@@ -185,6 +186,7 @@ VALUES (6, 4, to_date('07-12-2020','dd-mm-yyyy'), 'Afectiune hepatobiliara');
 
 INSERT INTO Retete(id_reteta, id_pacient, data_emitere, diagnostic)
 VALUES (7, 2, to_date('05-07-2021','dd-mm-yyyy'), 'Afectiune cardiovasculara');
+
 
 
 INSERT INTO ContinutRetete(id_reteta, id_medicament, cantitate)
