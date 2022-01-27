@@ -1,3 +1,12 @@
+--Folosite: GROUP BY, HAVING, START WITH, CONNECT BY, ORDER BY
+-- LOWER, UPPER,SUBSTR, INSTR, TO_CHAR, TO_DATE, ADD_MONTHS, MONTHS_BETWEEN
+-- DECODE, NVL, NULLIF, CASE
+-- INNER, LEFT, RIGHT, FULL JOIN;
+-- AVG, SUM, MIN, MAX, COUNT
+-- subinterogări în clauzele: SELECT, FROM, WHERE, HAVING;
+-- operatorul DIVISION.
+
+
 -- Afisarea informatiilor complete ale spitalelor (Nume spital + adresa)
 -- Ordonate descrescator in functie de tara si in cadrul fiecarei tari ordonate alfabetic
 
