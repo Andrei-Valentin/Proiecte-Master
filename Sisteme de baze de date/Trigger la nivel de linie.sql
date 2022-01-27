@@ -1,7 +1,6 @@
 --Trigger de tip LMD la nivel de linie
 --Nu ne permite sa introducem mai mult de 5 medicamente pe aceeasi reteta
 
-
 CREATE OR REPLACE TRIGGER numar_medicamente
 BEFORE INSERT OR UPDATE ON CONTINUTRETETE
 FOR EACH ROW
