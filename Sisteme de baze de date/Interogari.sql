@@ -1,8 +1,7 @@
--- Folosite: , HAVING, START WITH, CONNECT BY
+-- START WITH, CONNECT BY
 -- LOWER, UPPER,SUBSTR, INSTR, TO_CHAR, TO_DATE, ADD_MONTHS, MONTHS_BETWEEN
 -- DECODE, NULLIF, CASE
 -- INNER, LEFT, RIGHT, FULL JOIN;
---  MIN, MAX
 -- subinterogări în clauzele:  WHERE, HAVING;
 -- operatorul DIVISION.
 
@@ -66,3 +65,7 @@ ON (pc.id_pacient = nrt.id_pacient)
 HAVING nrt."Numar" > 1
 GROUP BY pc.nume, nrt."Numar"
 ORDER BY "Numar Retete" DESC
+
+
+
+
