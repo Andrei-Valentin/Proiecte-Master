@@ -163,3 +163,20 @@ VALUES (7, 'Adjuvin', 79);
 INSERT INTO Medicamente(id_medicament, denumire_medicament, pret)
 VALUES (8, 'Baneocin', 39);
 
+
+
+INSERT INTO Retete(id_reteta, id_pacient, data_emitere, diagnostic)
+VALUES (1, 1, to_date('02-05-2018','dd-mm-yyyy'), 'Afectiune hepatobiliara');
+
+INSERT INTO Retete(id_reteta, id_pacient, data_emitere, diagnostic)
+VALUES (2, 5, to_date('05-08-2018','dd-mm-yyyy'), 'Afectiune cardiovasculara');
+
+INSERT INTO Retete(id_reteta, id_pacient, data_emitere, diagnostic)
+VALUES (3, 2, to_date('03-02-2019','dd-mm-yyyy'), 'Infectie bacteriana');
+
+INSERT INTO Retete(id_reteta, id_pacient, data_emitere, diagnostic)
+VALUES (4, 3, to_date('04-12-2019','dd-mm-yyyy'), 'Acnee');
+
+INSERT INTO Retete(id_reteta, id_pacient, data_emitere, diagnostic)
+VALUES (5, 4, to_date('07-10-2021','dd-mm-yyyy'), 'Afectiune sistem nervos');
+
