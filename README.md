@@ -1,5 +1,5 @@
 # Proiecte-Master
 
-Sisteme Distribuite
+#Sisteme Distribuite
 
-FMI UNIBUC
+#FMI UNIBUC
