@@ -30,3 +30,15 @@ JOIN spital
 ON (spital.id_spital=personal.id_spital)
 GROUP BY spital.nume
 ORDER BY "Salariu Mediu" DESC;
+
+
+
+--Pacientii ordonati descrescator in functie de numarul total de medicamente care le-au fost prescrise
+SELECT pc.nume "Nume Pacient", pc.prenume "Prenume Pacient", cm.Cantitate "Cantitate medicamente"
+FROM pacienti pc
+JOIN (SELECT rt.id_pacient, crt.id_reteta, SUM(crt.cantitate) Cantitate FROM continutretete crt JOIN retete rt
+        ON (crt.id_reteta=rt.id_reteta)
+        GROUP BY rt.id_pacient, crt.id_reteta) cm
+ON (pc.id_pacient=cm.id_pacient)
+GROUP BY pc.nume, pc.prenume, cm.Cantitate
+ORDER BY cm.Cantitate DESC;
