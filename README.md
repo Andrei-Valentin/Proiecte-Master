@@ -1,5 +1,3 @@
 # Proiecte-Master
 
-# Sisteme Distribuite
-
-# FMI UNIBUC
+Sisteme Distribuite, FMI UNIBUC
