@@ -60,3 +60,25 @@ CREATE TABLE ContinutRetete(
     CONSTRAINT id_reteta_FK FOREIGN KEY (id_reteta) REFERENCES Retete(id_reteta),
     CONSTRAINT id_medicament_FK FOREIGN KEY (id_medicament) REFERENCES Medicamente(id_medicament)
 );
+
+
+INSERT INTO Adresa(id_adresa, nume_strada, oras, judet, tara)
+VALUES (1,'Calea Floreasca 8', 'Bucuresti', 'Bucuresti', 'Romania');
+
+INSERT INTO Adresa(id_adresa, nume_strada, oras, judet, tara)
+VALUES (2,'Bulevardul Constantin Brancoveanu', 'Bucuresti', 'Bucuresti', 'Romania');
+
+INSERT INTO Adresa(id_adresa, nume_strada, oras, judet, tara)
+VALUES (3,'Bulevardul Ferdinand', 'Constanta', 'Constanta', 'Romania');
+
+INSERT INTO Adresa(id_adresa, nume_strada, oras, judet, tara)
+VALUES (4,'Calea București 258', 'Bucuresti', 'Bucuresti', 'Romania');
+
+INSERT INTO Adresa(id_adresa, nume_strada, oras, judet, tara)
+VALUES (5,'Bulevardul Mamaia 477', 'Constanta', 'Constanta', 'Romania');
+
+INSERT INTO Adresa(id_adresa, nume_strada, oras, judet, tara)
+VALUES (6,'Str. Clinicilor 3-5', 'Cluj-Napoca', 'Cluj', 'Romania');
+
+INSERT INTO Adresa(id_adresa, nume_strada, oras, judet, tara)
+VALUES (7,'Strümpellstraße 41', 'Leipzig', '', 'Germania');
