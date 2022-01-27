@@ -14,6 +14,7 @@ BEGIN
 END;
 
 
+--Declansarea trigger-ului
 DECLARE
 exp_salariu exception;
 PRAGMA EXCEPTION_INIT(exp_salariu,-20200);
