@@ -118,3 +118,20 @@ VALUES (4, 'Vasiliu', 'Cristian', to_date('05-03-1980','dd-mm-yyyy'), to_char('0
 
 INSERT INTO Pacienti(id_pacient, nume, prenume, data_nasterii,telefon, asigurat)
 VALUES (5, 'Ayaz', 'Eren', to_date('07-03-1965','dd-mm-yyyy'), to_char('0721316239'), 0);
+
+
+
+INSERT INTO Personal(id_angajat, id_spital, functie, nume, prenume, data_angajare, salariu, telefon)
+VALUES (1, 2, 'ASISTENT MEDICAL', 'Dragan', 'Ionut', to_date('05-12-2019','dd-mm-yyyy'), 3200, to_char('0721493553'));
+
+INSERT INTO Personal(id_angajat, id_spital, functie, nume, prenume, data_angajare, salariu, telefon)
+VALUES (2, 1, 'MEDIC PRIMAR', 'Codreanu', 'Matei', to_date('07-12-2003','dd-mm-yyyy'), 9200, to_char('0721524153'));
+
+INSERT INTO Personal(id_angajat, id_spital, functie, nume, prenume, data_angajare, salariu, telefon)
+VALUES (3, 2, 'ASISTENT DE RADIOLOGIE', 'Bradeanu', 'Petru', to_date('03-11-2018','dd-mm-yyyy'), 6200, to_char('0726534523'));
+
+INSERT INTO Personal(id_angajat, id_spital, functie, nume, prenume, data_angajare, salariu, telefon)
+VALUES (4, 2, 'ASISTENT MEDICAL', 'Serban', 'Carmen', to_date('01-12-2021','dd-mm-yyyy'), 4200, to_char('0726196723'));
+
+INSERT INTO Personal(id_angajat, id_spital, functie, nume, prenume, data_angajare, salariu, telefon)
+VALUES (5, 5, 'MEDIC PRIMAR', 'Jürgen', 'Kiwit', to_date('03-12-1980','dd-mm-yyyy'), 25000, to_char('2407194653'));
