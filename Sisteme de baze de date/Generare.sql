@@ -101,3 +101,20 @@ VALUES (5, 7, 'Helios Park-Klinikum Leipzig');
 
 INSERT INTO Spital(id_spital, id_adresa, nume)
 VALUES (6, 6, 'Spitalul Clinic Județean de Urgență Cluj');
+
+
+
+INSERT INTO Pacienti(id_pacient, nume, prenume, data_nasterii,telefon, asigurat)
+VALUES (1, 'Popa', 'Alexandru', to_date('13-12-1970','dd-mm-yyyy'), to_char('0726594753'), 1);
+
+INSERT INTO Pacienti(id_pacient, nume, prenume, data_nasterii,telefon, asigurat)
+VALUES (2, 'Gheorghescu', 'Florin', to_date('13-10-1999','dd-mm-yyyy'), to_char('0726337547'), 0);
+
+INSERT INTO Pacienti(id_pacient, nume, prenume, data_nasterii,telefon, asigurat)
+VALUES (3, 'Mateiescu', 'Cornel', to_date('11-04-1990','dd-mm-yyyy'), to_char('0726291554'), 1);
+
+INSERT INTO Pacienti(id_pacient, nume, prenume, data_nasterii,telefon, asigurat)
+VALUES (4, 'Vasiliu', 'Cristian', to_date('05-03-1980','dd-mm-yyyy'), to_char('0726676739'), 1);
+
+INSERT INTO Pacienti(id_pacient, nume, prenume, data_nasterii,telefon, asigurat)
+VALUES (5, 'Ayaz', 'Eren', to_date('07-03-1965','dd-mm-yyyy'), to_char('0721316239'), 0);
