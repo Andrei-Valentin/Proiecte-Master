@@ -58,11 +58,5 @@ GROUP BY pc.nume, nrt."Numar"
 ORDER BY "Numar Retete" DESC
 
 
--- START WITH, CONNECT BY
--- LOWER, UPPER,SUBSTR, INSTR, TO_CHAR, TO_DATE, ADD_MONTHS, MONTHS_BETWEEN
--- DECODE, NULLIF, CASE
--- INNER, LEFT, RIGHT, FULL JOIN;
--- subinterogări în clauzele:  WHERE, HAVING;
--- operatorul DIVISION.
 
 
