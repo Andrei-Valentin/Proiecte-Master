@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adaugare produse</title>
+</head>
+<body>
+<h1 style="text-align:left;">Adaugare produse in magazine</h1>
+<div style="text-align:left;">
+  <form method="Adaugare">
+    <table>
+      <tbody>
+
+      <tr>
+        <td> <label for="idMagazin">Introduceti id-ul magazinului:</label> </td>
+        <td> <input type="text" placeholder="ID Magazin" id="idMagazin" required="required"/> </td>
+      </tr>
+
+      <tr>
+        <td> <label for="denumire">Introduceti denumirea produsului:</label> </td>
+        <td> <input type="text" placeholder="Denumire Produs" id="denumire" required="required"/> </td>
+      </tr>
+
+      <tr>
+        <td> <label for="categorie">Introduceti categoria produsului:</label> </td>
+        <td> <input type="text" placeholder="Categorie Produs" id="categorie" required="required"/> </td>
+      </tr>
+
+      <tr>
+        <td> <label for="pret">Introduceti pretul produsului:</label> </td>
+        <td> <input type="number" placeholder="Pret Produs" id="pret" required="required"/> </td>
+      </tr>
+
+      </tbody>
+
+      <!--
+      <tbody>
+      <td th:text="${produs.denumire}"></td>
+      <td th:text="${produs.categorie}"></td>
+      <td th:value="${produs.pret}"></td>
+      </tbody>
+      -->
+
+    </table> <br>
+    <input onclick="messageFunction()" type="submit" value="Adauga produs" />
+  </form> <br>
+</div>
+
+</body>
+</html>
